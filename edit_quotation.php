@@ -70,7 +70,7 @@ $items = $conn->query("SELECT * FROM quotation_items WHERE quotation_id = $id");
     </table>
 
     <button type="button" class="btn btn-secondary btn-sm" onclick="addRow()">Add Item</button>
-    <button type="submit" class="btn btn-primary float-end">Update Quotation</button>
+    <button type="submit" class="btn btn-primary float-end mt-3">Update Quotation</button>
 
   </form>
 </div>

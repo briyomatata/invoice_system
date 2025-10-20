@@ -70,7 +70,7 @@ $items = $conn->query("SELECT * FROM lpo_items WHERE lpo_id = $id");
     </table>
 
     <button type="button" class="btn btn-secondary btn-sm" onclick="addRow()">Add Item</button>
-    <button type="submit" class="btn btn-primary float-end">Update LPO</button>
+    <button type="submit" class="btn btn-primary float-end mt-3">Update LPO</button>
   </form>
 </div>
 

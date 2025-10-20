@@ -78,7 +78,7 @@ $items = $conn->query("SELECT * FROM invoice_items WHERE invoice_id = $id");
     </table>
 
     <button type="button" class="btn btn-secondary btn-sm" onclick="addRow()">Add Item</button>
-    <button type="submit" class="btn btn-primary float-end">Update Invoice</button>
+    <button type="submit" class="btn btn-primary float-end mt-3">Update Invoice</button>
 
   </form>
 </div>
