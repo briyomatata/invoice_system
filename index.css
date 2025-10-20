@@ -1,0 +1,109 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+}
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: #10b981 !important;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(30, 64, 175, 0.8), rgba(16, 185, 129, 0.8)),
+    url("https://images.unsplash.com/photo-1508387021341-d7f0f1c3caa2?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
+  color: #fff;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  animation: fadeUp 1.2s ease;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Service Cards */
+.service-card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.service-icon {
+  font-size: 2.5rem;
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.form-floating > label {
+  padding-left: 1.5rem;
+}
+.form-control {
+  border-radius: 0.75rem;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+.footer-social a:hover {
+  background: #fff;
+  color: #10b981 !important;
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #10b981; /* Green accent */
+  color: #fff;
+  border: none;
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1050;
+  transition: all 0.3s ease;
+}
+#backToTop:hover {
+  background: #1e40af; /* Blue on hover */
+}
